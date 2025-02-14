@@ -44,3 +44,37 @@ natas 6
 change cookies 0 to 1
 
 ------------------------------------------------------------------------------------------------------------------------------------------
+
+natas7
+in url go to (includes/secret.inc ) this is in source code 
+then copy this FOEIUWGHFEEUHOFUOIU
+fill the blank and press submit so you can see the password
+
+------------------------------------------------------------------------------------------------------------------------------------------
+natas8
+go to inspect
+search for a comment
+go to that url and its done
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+natas9
+
+go to source 
+you can finde incoded secret 
+decode it by the way they wrotten down but viseversa 
+then paste it where you should and you can see the password
+
+------------------------------------------------------------------------------------------------------------------------------------------
+ 
+natas 10
+there is somthing like terminal and grep ,
+so you can use ; and after that run youre own commands
+; ls/etc/-ltrh #
+you can see natas_webpass
+so
+; ls/etc/natas_webpass/-ltrh #
+; cat/etc/natas_webpass/natas10 #
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
