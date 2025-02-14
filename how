@@ -78,3 +78,42 @@ so
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
+natas11
+again its like that but with some filters
+you can use this 
+.* /etc/natas_webpass/natas11 #
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+natas12
+you have to use this 2 php programs
+
+<?php
+function xor_encrypt($in){
+    $key = "eDWo";
+    $text = $in ;
+    $outText = "";
+    for ($i = 0; $i < strlen($text); $i++){
+        $outText .= $text[ $i ] ^ $key[$i % strlen($key) ];
+    }
+    return $outText;
+} 
+$data = array( "showpassword"=>"yes", "bgcolor"=>"#ffffff");
+echo base64_encode(xor_encrypt(json_encode($data )));
+
+?>
+
+
+<?php
+echo 'start';
+$key = base64_decode ("HmYkBwozJw4WNyAAFyB1VUcqOE1JZjUIBis7ABdmbU1GIjEJAyIxTRg%3D");
+$defaultdata = array( "showpassword"=>"no", "bgcolor"=>"#ffffff");
+$outText ="";
+$text = json_encode($defaultdata);
+for($i=0;$i<strlen($text);$i++){
+    $outText .= $text[$i] ^ $key[$i % strlen($key)];
+}
+echo $outText;
+?>
+
+------------------------------------------------------------------------------------------------------------------------------------------
