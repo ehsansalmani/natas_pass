@@ -209,3 +209,9 @@ natas16
  past that php sessionid and refresh the page 
  
  ------------------------------------------------------------------------------------------------------------------------------------------
+ natas23   (from 22)
+in the view source its already kind of exist 
+curl "http://natas22.natas.labs.overthewire.org/?revelio=1" -u natas22:d8rwGBl0Xslg3b76uh3fEbSlnOUBlozz
+i used curl for this and such a wow 
+------------------------------------------------------------------------------------------------------------------------------------------
+
