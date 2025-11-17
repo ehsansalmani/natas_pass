@@ -203,4 +203,9 @@ natas16
  http***/?name=admin%0Aadmin%201
  ------------------------------------------------------------------------------------------------------------------------------------------
 
+ natas 22
+ there is 2 pages in second page change something and add admin in parameters and value 1 
+ after that copy the php sessionid and go back to first page 
+ past that php sessionid and refresh the page 
  
+ ------------------------------------------------------------------------------------------------------------------------------------------
