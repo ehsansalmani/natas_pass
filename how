@@ -226,3 +226,8 @@ send test parameter
 forward it to repeater and change passwd to pass[] and value to ''
 ------------------------------------------------------------------------------------------------------------------------------------------
 natas26
+its like directory traversal and lfi 
+you can use outher tools but i find a python code in the internet and used that 
+chack natas25
+------------------------------------------------------------------------------------------------------------------------------------------
+natas 27
