@@ -2,7 +2,7 @@ import requests
 from string import ascii_letters, digits
 
 url = "http://natas28.natas.labs.overthewire.org/index.php"
-auth = ("natas28", "JW2P2cqQ1iCYKBrjd7fNum2tCty9SLZ3")  
+auth = ("natas28", "1JNwQM1Oi6J6j1k49Xyw7ZN6pXMQInVj")  
 def query(payload):
     data = {"query": payload}
     r = requests.post(url, data=data, auth=auth)
