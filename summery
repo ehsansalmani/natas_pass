@@ -1,0 +1,67 @@
+Natas 1
+Vulnerability: Hidden HTML Comment
+Natas 2
+Vulnerability: Directory Browsing
+Natas 3
+Vulnerability: Publicly Exposed File
+Natas 4
+Vulnerability: Open Redirect Check
+Natas 5
+Vulnerability: Weak Cookie Check
+Natas 6
+Vulnerability: Hard coded Secret in Source
+Natas 7
+Vulnerability: Path Traversal Logic
+Natas 8
+Vulnerability: Reversible Encoding
+Natas 9
+Vulnerability: Command Injection (Filtered)
+Natas 10
+Vulnerability: Command Injection (Blacklist Bypass)
+Natas 11
+Vulnerability: Weak XOR Encryption
+Natas 12
+Vulnerability: File Upload (Extension Trick)
+Natas 13
+Vulnerability: File Upload (Content/MIME Check)
+Natas 14
+Vulnerability: SQL Injection
+Natas 15
+Vulnerability: Blind SQL Injection
+Natas 16
+Vulnerability: Blind Command Injection
+Natas 17
+Vulnerability: Timing Based SQL Injection
+Natas 18
+Vulnerability: Weak Session ID Handling
+Natas 19
+Vulnerability: Session ID Encoding Issue
+Natas 20
+Vulnerability: Race Condition / Logic Flaw
+Natas 21
+Vulnerability: Cross Site Privilege Interaction
+Natas 22
+Vulnerability: Forced Browsing (Hidden Logic)
+Natas 23
+Vulnerability: Improper Input Filter
+Natas 24
+Vulnerability: Weak Regex Validation
+Natas 25
+Vulnerability: Log Injection → LFI
+Natas 26
+Vulnerability: Dangerous Serialization
+Natas 27
+Vulnerability: Username Truncation Flaw
+Natas 28
+Vulnerability: Cryptographic Weakness (CBC)
+Natas 29
+Vulnerability: Unsafe Sandbox Filtering
+Natas 30
+Vulnerability: SQL Filtering Bypass
+Natas 31
+Vulnerability: File Upload → Code Execution
+Natas 32
+Vulnerability: PHP Object Injection
+Natas 33
+Vulnerability: Unsafe eval() / Code Injection
+
