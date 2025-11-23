@@ -267,3 +267,6 @@ and if you run it that will give you the pass
 POST /index.pl?/var/www/natas/natas32/getpassword%20| HTTP/1.1
 ------------------------------------------------------------------------------------------------------------------------------------------
 natas34
+file upload vulnerability and mixed of md5 i hate md5 
+but that was last one 
+------------------------------------------------------------------------------------------------------------------------------------------
