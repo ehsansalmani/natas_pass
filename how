@@ -253,3 +253,17 @@ simple sqli
 i have the python file named natas 30 chck that
 ------------------------------------------------------------------------------------------------------------------------------------------
 natas32
+again perl vulnerability ,
+you have to add title"file" and value"ARGV" parameters
+and change it ro first sending parameters 
+in burp
+so after that after post ..pl? /natas/natas_webpass and done 
+------------------------------------------------------------------------------------------------------------------------------------------
+natas33
+again like previos one but 
+this line changed just for executing 
+i mean there is a c file an directorys 
+and if you run it that will give you the pass
+POST /index.pl?/var/www/natas/natas32/getpassword%20| HTTP/1.1
+------------------------------------------------------------------------------------------------------------------------------------------
+natas34
